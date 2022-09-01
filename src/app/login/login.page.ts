@@ -13,8 +13,8 @@ export class LoginPage implements OnInit {
   user={
     usuario:"",
     password:"",
-    correo:"",
-    telefono:""
+    //correo:"",
+    //telefono:""
   }
   constructor(private router: Router) { }
 
