@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Animation, AnimationController } from '@ionic/angular';
 
 @Component({
   selector: 'app-registo',

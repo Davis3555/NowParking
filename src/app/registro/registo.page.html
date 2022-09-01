@@ -1,9 +1,41 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Registo</ion-title>
+    <ion-title>NowParking</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-card>
+    <ion-card-header>
+      <ion-title>Registrarse</ion-title>
+    </ion-card-header>
+    <ion-card-content>
+    
+      <ion-item lines="full">
+        <ion-label position="floating">Usuario</ion-label>
+        <!-- Usamos ngModel para indicarle al input el objeto a utilizar-->
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item lines="full">
+        <!-- Usamos ngModel para indicarle al input el objeto a utilizar-->
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="password" ></ion-input>
+      </ion-item>
+      <ion-item lines="full">
+        <ion-label position="floating">Correo</ion-label>
+        <!-- Usamos ngModel para indicarle al input el objeto a utilizar-->
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item lines="full">
+        <ion-label position="floating">Telefono</ion-label>
+        <!-- Usamos ngModel para indicarle al input el objeto a utilizar-->
+        <ion-input type="text"></ion-input>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-toolbar class="ion-no-border">
+      <ion-button expand="full"[routerLink]="['/login']">Registrarse </ion-button>
+    </ion-toolbar>
+  </ion-card>  
 </ion-content>

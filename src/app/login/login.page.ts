@@ -12,7 +12,9 @@ export class LoginPage implements OnInit {
   //se crea una cadena "user" con dos variables "usuario" y "password"
   user={
     usuario:"",
-    password:""
+    password:"",
+    correo:"",
+    telefono:""
   }
   constructor(private router: Router) { }
 

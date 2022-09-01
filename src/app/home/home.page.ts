@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 //importamos la libreria activatedRouter y Router desde angular
 import { ActivatedRoute, Router } from '@angular/router';
+import { createAnimation } from '@ionic/angular';
 
 
 
@@ -33,9 +34,11 @@ export class HomePage {
 }
 
 
+
     
   ngOnInit() {
     console.log('loginPage ngOnInit');
+    
   }
   //script para destruccion de procesos de los page's  
   ngOnDestroy() {
