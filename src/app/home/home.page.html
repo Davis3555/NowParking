@@ -4,12 +4,15 @@
     </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-card class="animacion1"><ion-card-item><ion-label>Bienvenido {{data.usuario}}</ion-label></ion-card-item>
+<ion-content  [fullscreen]="true">
+   <ion-card class="animacion1"><ion-card-item><center><ion-label>¡Bienvenido {{data.usuario}}!</ion-label></center></ion-card-item>
     <ion-card-item class="loader">
   </ion-card-item>
   
   </ion-card>
-  
- 
+  <ion-col>
+    <ion-img class="logo" src="/assets/icon/auto2.png"></ion-img>
+    <ion-button routerLink="/mapa" expand="full" (click)="ingresar()">Estacionarse</ion-button><!--con [routerlink]no funciona-->
+  </ion-col>
+ </ion-content>
 

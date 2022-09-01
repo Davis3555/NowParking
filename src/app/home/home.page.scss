@@ -45,6 +45,7 @@ flex-direction: column;
   background-color: rgba(0,0,0,0.2);
   position: relative;
   justify-content: center;
+  left: 50px;
  }
  
  .loader::before {
@@ -70,4 +71,15 @@ flex-direction: column;
    right: 0;
    left: unset;
   }
+ }
+
+ .bienvenida{
+   position: absolute;
+   text-align: center;
+ }
+
+ .icono1{
+   position: relative;
+   font-size: 20px;
+   
  }
