@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 //importamos la libreria activatedRouter y Router desde angular
 import { ActivatedRoute, Router } from '@angular/router';
-import { createAnimation } from '@ionic/angular';
+import { createAnimation, IonModal } from '@ionic/angular';
 
 
 
@@ -61,3 +61,5 @@ export class HomePage {
     console.log('loginPage ionViewDidLeave');
   }
 }
+
+
