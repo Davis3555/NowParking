@@ -18,9 +18,14 @@ const routes: Routes = [
   {
     path: 'registro',
     loadChildren: () => import('./registro/registo.module').then( m => m.RegistoPageModule)
-  },  {
+  },
+  {
     path: 'mapa',
     loadChildren: () => import('./mapa/mapa.module').then( m => m.MapaPageModule)
+  },
+  {
+    path: 'list',
+    loadChildren: () => import('./list/list.module').then( m => m.ListPageModule)
   },
 
 ];
