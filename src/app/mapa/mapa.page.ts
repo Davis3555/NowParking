@@ -8,11 +8,12 @@ import { Geolocation, Geoposition } from '@awesome-cordova-plugins/geolocation/n
   styleUrls: ['./mapa.page.scss'],
 })
 export class MapaPage implements OnInit {
+  routerOutlet: any;
 
   constructor(public geolocation: Geolocation) { //se determina el constructor con variable public
   
   }
-  
+  goBack() { this.routerOutlet.pop(); }
   ngAfterViewInit() {
 
     this.geolocationNative()
