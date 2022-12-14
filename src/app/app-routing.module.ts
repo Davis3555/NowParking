@@ -28,6 +28,11 @@ const routes: Routes = [
     loadChildren: () => import('./list/list.module').then( m => m.ListPageModule)
   },
   {
+
+    path: 'pagos',
+    loadChildren: () => import('./pagos/pagos.module').then( m => m.PagosPageModule)
+  },
+  {
     path: 'perfil',
     loadChildren: () => import('./perfil/perfil.module').then( m => m.PerfilPageModule)
   },
@@ -46,11 +51,14 @@ const routes: Routes = [
   {
     path: 'rrss',
     loadChildren: () => import('./rrss/rrss.module').then( m => m.RRSSPageModule)
+
   },
   {
     path: '**',
     loadChildren: () => import('./notfound/notfound.module').then( m => m.NotfoundPageModule)
   },
+
+
 
 
 ];
