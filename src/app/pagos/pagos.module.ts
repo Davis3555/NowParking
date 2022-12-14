@@ -18,3 +18,4 @@ import { PagosPage } from './pagos.page';
   declarations: [PagosPage]
 })
 export class PagosPageModule {}
+
