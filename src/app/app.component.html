@@ -1,3 +1,31 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  
+  <ion-menu side="start" menuid="first" contentId="main">
+    <ion-header>
+      <ion-toolbar color="tertiary">
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <ion-list>
+        <ion-item>
+          <ion-button [routerLink]="['/perfil']">Perfil</ion-button>
+        </ion-item>
+        <ion-item>
+          <ion-button [routerLink]="['/configuracion']">Configuracion</ion-button>
+        </ion-item>
+        <ion-item>
+          <ion-button [routerLink]="['/ayuda']">Ayuda</ion-button>
+        </ion-item>
+        <ion-item>
+          <ion-button [routerLink]="['/acerca']">Acerca de nosotros</ion-button>
+        </ion-item>
+        <ion-item>
+          <ion-button [routerLink]="['/rrss']">Redes sociales</ion-button>
+        </ion-item>  
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>

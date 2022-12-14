@@ -28,8 +28,30 @@ const routes: Routes = [
     loadChildren: () => import('./list/list.module').then( m => m.ListPageModule)
   },
   {
+
     path: 'pagos',
     loadChildren: () => import('./pagos/pagos.module').then( m => m.PagosPageModule)
+  },
+  {
+    path: 'perfil',
+    loadChildren: () => import('./perfil/perfil.module').then( m => m.PerfilPageModule)
+  },
+  {
+    path: 'configuracion',
+    loadChildren: () => import('./configuracion/configuracion.module').then( m => m.ConfiguracionPageModule)
+  },
+  {
+    path: 'ayuda',
+    loadChildren: () => import('./ayuda/ayuda.module').then( m => m.AyudaPageModule)
+  },
+  {
+    path: 'acerca',
+    loadChildren: () => import('./acerca/acerca.module').then( m => m.AcercaPageModule)
+  },
+  {
+    path: 'rrss',
+    loadChildren: () => import('./rrss/rrss.module').then( m => m.RRSSPageModule)
+
   },
   {
     path: '**',

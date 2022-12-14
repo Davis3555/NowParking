@@ -1,7 +1,13 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
+    
+    <ion-buttons slot="start"><!--boton menu hamburgesa -->
+      <ion-menu-button auto-hide="false"></ion-menu-button>
+    </ion-buttons>
+  
     <ion-title>Bienvenido a NowParking</ion-title>
-    </ion-toolbar>
+    
+  </ion-toolbar>
 </ion-header>
 
 <ion-content  [fullscreen]="true">
@@ -16,7 +22,7 @@
   
   </ion-col>
   <ion-col>
-   <div class="square square-b"> <ion-button routerLink="/list" expand="full" (click)="ingresar()">Usuarios</ion-button></div><!--con [routerlink]no funciona-->
+   <div class="square square-b"> <ion-button  expand="full" (click)="ingresar()">Usuarios</ion-button></div><!--con [routerlink]no funciona-->
   </ion-col>
   <ion-card>
     <ion-card-item>
