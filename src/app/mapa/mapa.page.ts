@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
+
 
 import { Geolocation, Geoposition } from '@awesome-cordova-plugins/geolocation/ngx';//importacion de libreria para el uso de geolocalizacion
 
@@ -10,7 +12,7 @@ import { Geolocation, Geoposition } from '@awesome-cordova-plugins/geolocation/n
 export class MapaPage implements OnInit {
   routerOutlet: any;
 
-  constructor(public geolocation: Geolocation) { //se determina el constructor con variable public
+  constructor(public geolocation: Geolocation, private router:Router, private ActivatedRouter: ActivatedRoute) { //se determina el constructor con variable public
   
   }
   goBack() { this.routerOutlet.pop(); }

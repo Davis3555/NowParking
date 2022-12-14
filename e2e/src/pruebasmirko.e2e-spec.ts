@@ -1,12 +1,5 @@
-import { browser, element, by} from 'protractor';//importamos protractor, browser automatiza las pruebas simula al usuario,
-                                                 //element sirve para acceder a los elementos de la visual,
-                                                 //by obtenermos un elemnto mediante un css etc.
+import { browser, element, by} from 'protractor';
 
-//prueba por defecto
-
-
-
-// se describe el nombre de las pruebas
 describe('test a mi app',()=>{
   //configuracion de la prueba
   beforeEach (()=>{    
@@ -38,5 +31,3 @@ describe('test a mi app',()=>{
       browser.driver.sleep(1000);
     });
 });
-
-
